@@ -275,7 +275,7 @@ body {
 /*Home page */
 
 #main-bg{
-    height: 76vh;
+    height: 70.5vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -286,23 +286,116 @@ body {
 }
 
 .page-header{
-    background-color: rgb(72, 116, 173, 0.2);
+    background-color: #776d5a2f;
     width: 100vw;
     padding-top: 90px;
     padding-bottom: 90px;
 }
 
 #main-bg h1{
+    font-size: 38pt;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    color: rgb(10, 43, 87);
+    padding-top: 30px;
+}
+
+#main-bg h2{
+    font-size: 14pt;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(10, 43, 87);
+}
+
+.button{
+  margin: 35px 0px 0px 0px;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.button-text{
+  font-size: 16pt;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: #776d5aff;
+  padding: 10px 20px 10px 20px;
+
+}
+
+.button-text:hover{
+  background-color: rgb(187, 182, 172);
+  color:rgb(10, 43, 87);
+  border: 1px solid rgb(10, 43, 87);
+}
+
+@media screen and (min-width: 500px){
+
+  #main-bg{
+    height: 76vh;
+}
+
+  #main-bg h1{
+    font-size: 46pt;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    color: rgb(10, 43, 87);
+}
+
+#main-bg h2{
+    font-size: 18pt;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(10, 43, 87);
+}
+}
+
+@media screen and (min-width: 768px){
+  #main-bg h1{
     font-size: 8vw;
     text-align: center;
     font-family: 'Satisfy', cursive;
     color: rgb(10, 43, 87);
 }
 
-#main-bg p{
-    position: relative;
-    font-size: 3.5vw;
+#main-bg h2{
+    font-size: 3.1vw;
     text-align: center;
-    padding-top: 3vh;
+    padding-top: 3.2vh;
     color: rgb(10, 43, 87);
+}
+}
+
+
+@media screen and (min-width: 1200px){
+  #main-bg h1{
+    font-size: 72pt;
+}
+
+#main-bg h2{
+    font-size: 28pt;
+}
+}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+    scroll-behavior: initial;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: none;
+  transition: none;
+  z-index: 1;
+}
+
+.skip a:focus{
+  top:0;
+}
 }
