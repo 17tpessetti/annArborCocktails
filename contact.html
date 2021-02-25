@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Sip of Ann Arbor</title>
+    </head>
+    <body>
+
+        <div class="container">
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <nav>   
+        <div class="nav-container">
+            <div class="logo">
+            <p id=header-p>Sip of Ann Arbor</p>
+            </div>
+        <div class="navbar">
+        
+        <div class="icon-bar" onclick="Show()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        <div id="navlist">
+        <ul id="nav-lists">
+            <li class="close"><span onclick="Hide()">×</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="competition.html">Recipes</a></li>
+            <li><a href="sponsors.html">Store</a></li>
+            <li class="last"><a id="current" href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+        
+        </div>
+        </div>
+        </nav>
+        <main>   
+        <header>
+        </header>
+        <div id="background">
+        <div id="form">
+            <form class="form-horizontal" action = 'https://formspree.io/mdooobly' method="POST">
+                <fieldset>
+                    <legend class="text-center">Contact Us</legend>
+            
+                    <div class="form-group">
+                        <span><i class="firstname"></i></span>
+                        <div>
+                            <label for="fname">First Name<input id="fname" name="name" type="text" placeholder="First Name" class="form-control" aria-label= "First Name" required></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span><i class="lastname"></i></span>
+                        <div>
+                            <label for="lname">Last Name<input id="lname" name="name" type="text" placeholder="Last Name" class="form-control" aria-label="Last Name" required></label>
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <span><i class="email"></i></span>
+                        <div>
+                            <label for="email">Email Address<input id="email" name="email" type="email" placeholder="Email Address" class="form-control" aria-label="Email Address" required></label>
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <span><i class="phonenumber"></i></span>
+                        <div>
+                            <label for='phone'>Phone Number<input id="phone" name="phone" type="tel" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone (use format ###-###-####)" class="form-control" aria-label= "Phone Number" required></label>
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <span><i class = "message"></i></span>
+                        <div>
+                            <label for='message'>Message<textarea class="form-control" id="message" name="message" placeholder="Enter your message here!" aria-label= "Type your message here" required></textarea></label>
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-lg" aria-label= "Submit button">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p class="footer-title">Sip of Ann Arbor</p>
+                <p class="footer-description">Site created by Taylor Pessetti</p>
+            </div>
+            </footer>
+        </main>
+        </div>
+        <script src="js/mainpage.js"></script>
+    </body>
+</html>
