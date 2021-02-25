@@ -272,6 +272,10 @@ body {
     font-size: 16pt;
   }
 
+.other-bg{
+  background-color: #e2e9f3ff;
+}
+
 /*Home page */
 
 #main-bg{
@@ -285,7 +289,7 @@ body {
     background-position: center; 
 }
 
-.page-header{
+.main-page-header{
     background-color: #776d5a2f;
     width: 100vw;
     padding-top: 90px;
@@ -327,7 +331,24 @@ body {
 .button-text:hover{
   background-color: rgb(187, 182, 172);
   color:rgb(10, 43, 87);
-  border: 1px solid rgb(10, 43, 87);
+  border: 1px solid #0a2b57;
+}
+
+/* About Us Page */
+.about-page-header{
+  background-color: #0a2b572f;
+  width: 100vw;
+  padding-top: 51px;
+  padding-bottom: 51px;
+}
+
+.about-headerp{
+  font-size: 20px;
+  color: rgb(10, 43, 87);
+  margin: 20px 15% 0px 15%;
+  text-align: center;
+  background-color: #ffffff5d;
+  padding: 15px 15px 15px 15px;
 }
 
 @media screen and (min-width: 500px){
