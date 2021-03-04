@@ -331,7 +331,7 @@ body {
 .button-text:hover{
   background-color: rgb(187, 182, 172);
   color:rgb(10, 43, 87);
-  border: 1px solid #0a2b57;
+  border: 1px solid rgb(10, 43, 87);
 }
 
 /* About Us Page */
@@ -349,6 +349,151 @@ body {
   text-align: center;
   background-color: #ffffff5d;
   padding: 15px 15px 15px 15px;
+}
+
+/* Recipe Single Page */
+#recipe-header h1{
+  font-size: 38pt;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  color: rgb(10, 43, 87);
+  padding: 30px 0px 0px 0px;
+}
+
+.recipe-card{
+  text-align: center;
+  padding: 40px 30px 40px 30px;
+  background-color: white;
+  margin: 30px 30px 30px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 12pt;
+  color:rgb(65, 65, 65);
+}
+
+
+.recipe-card h2{
+  font-size: 28pt;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  color: rgb(10, 43, 87);
+  padding: 0px 0px 20px 0px;
+}
+
+.recipe-card p{
+  text-align: center;
+}
+
+.recipe-img{
+  text-align: center;
+  align-items: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.recipe-img img{
+  width: 250px;
+}
+
+.ingredients h3{
+  font-size: 20pt;
+  color: rgb(10, 43, 87);
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.ingredients ul{
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.ingredients ul li{
+  font-size: 14pt;
+}
+
+.ingredients span {
+  font-style: italic;
+}
+
+.directions h3{
+  font-size: 20pt;
+  color: rgb(10, 43, 87);
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.directions ol{
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.directions ol li{
+  font-size: 14pt;
+  margin-bottom: 10px;
+}
+
+/* Store Page */
+#store-page{
+  background-color: aliceblue;
+}
+
+#store-header h1{
+  font-size: 38pt;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  color: rgb(10, 43, 87);
+  padding: 30px 0px 0px 0px;
+}
+
+#store-header p{
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+}
+
+.store-card{
+  text-align: center;
+  padding: 40px 30px 40px 30px;
+  background-color: white;
+  margin: 30px 30px 30px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 12pt;
+  color:rgb(65, 65, 65);
+}
+
+.store-card h2{
+  font-size: 28pt;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  color: rgb(10, 43, 87);
+  padding: 0px 0px 20px 0px;
+}
+
+.store-card p{
+  text-align: center;
+}
+
+.store-img{
+  text-align: center;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.store-img img{
+  width: 200px;
+}
+
+.price{
+  color:rgb(10, 43, 87);
+  font-size: 20pt;
+}
+
+.store-bottom{
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+    font-size: 20pt;
 }
 
 /* Contact Page */
@@ -445,6 +590,30 @@ textarea {
     padding-top: 20px;
     color: rgb(10, 43, 87);
 }
+
+#recipe-header h1{
+  font-size: 46pt;
+}
+
+.header_and_img h2{
+  font-size: 32pt;
+}
+
+.recipe-img img{
+  width: 350px;
+}
+
+.ingredients ul{
+  text-align: center;
+  padding-left: 0px;
+  list-style: none;
+}
+
+.directions ol{
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 40px;
+}
 }
 
 @media screen and (min-width: 768px){
@@ -461,6 +630,47 @@ textarea {
     padding-top: 3.2vh;
     color: rgb(10, 43, 87);
 }
+
+#store-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+.recipe-card{
+  text-align: -webkit-center;
+  max-width: 700px;
+}
+
+#recipe-grid{
+  text-align: -webkit-center;
+}
+
+#list-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  max-width: 700px;
+}
+
+.directions{
+  grid-column: 1/3;
+}
+
+.ingredients h3{
+  padding-top: 20px;
+}
+
+.ingredients{
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+}
+
+hr{
+  grid-column: 1/3;
+}
+
 }
 
 
@@ -472,6 +682,11 @@ textarea {
 #main-bg h2{
     font-size: 28pt;
 }
+
+.recipe-card{
+  max-width: 1100px;
+}
+
 }
 
 
